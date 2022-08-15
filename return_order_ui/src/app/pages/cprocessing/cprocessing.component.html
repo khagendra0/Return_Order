@@ -1,0 +1,57 @@
+<app-nav></app-nav>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <mat-card>
+            <div class="container text-center">
+              <h1>Welcome {{khaggu}}!!</h1>
+                <img src="../../../assets/return.png" width="250" height="250" alt="" >
+                
+                <h2>Create Return Request</h2>
+                
+            </div>
+       
+        
+        <form (ngSubmit)='formSubmit()' #form="ngForm"> 
+            
+                <mat-form-field class ="full-width" appearance="fill">
+                  <mat-label>Customer Name</mat-label>
+                  <input required [(ngModel)]="cprocessingForm.userName" name="username" type="text" matInput placeholder="Enter here">
+                </mat-form-field>
+                <mat-form-field class ="full-width" appearance="fill">
+                    <mat-label>Contact Number</mat-label>
+                    <input  [(ngModel)]="cprocessingForm.contactNumber" name="contactNumber" type="text"   matInput placeholder="Enter here"  pattern="[7-9]{1}[0-9]{9}">
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label appearance="fill">Component Type</mat-label>
+                    <mat-select required [(value)]="cprocessingForm.componentType" name="componentType">
+                      
+                      <mat-option value="Integral">Integral Component</mat-option>
+                      <mat-option value="Accessory">Accessory Component</mat-option>
+                      
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field class ="full-width" appearance="fill">
+                    <mat-label>Component Name</mat-label>
+                    <input required [(ngModel)]="cprocessingForm.componentName" name="componentName" type="text"  matInput placeholder="Enter here">
+                  </mat-form-field>
+                  <mat-form-field class ="full-width" appearance="fill">
+                    <mat-label>Quantity</mat-label>
+                    <input required [(ngModel)]="cprocessingForm.quantity" name="quantity" type="number" matInput placeholder="Enter here">
+                  </mat-form-field>
+                  
+                  <div class="container text-center">
+                    
+                    <button type="submit" mat-raised-button color="primary">Create Request</button>
+                    <button type="reset" class="clear" (onclick)="clear(form)" mat-raised-button color="accent">Clear</button>
+                    
+                  </div>
+                
+             
+        </form>
+      </mat-card>
+      
+
+        </div>
+    </div>

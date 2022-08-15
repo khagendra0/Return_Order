@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    height: 70px;
+  }
+.fu{
+    margin-top: 5%;
+}
+.clear{
+    margin-left: 20px;
+}

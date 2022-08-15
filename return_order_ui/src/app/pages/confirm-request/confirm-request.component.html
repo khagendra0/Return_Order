@@ -1,0 +1,50 @@
+<app-nav></app-nav>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <mat-card>
+            <div class="container text-center">
+                <h2 class="fu">Please Review the details</h2>
+                <hr>
+                <table class="table">
+                    <tr >
+                        <th width="100%">Order Request Id</th>
+                        <td >{{requestId}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <th style="width:70%">UserName</th>
+                        <td >{{username}}</td>
+                    </tr>
+                    <tr>
+                        <th>Estimated Delivery Date</th>
+                        <td >{{date}}</td>
+                    </tr>
+                    <tr>
+                        <th>Packaging and Delivery Charge</th>
+                        <td >{{pAndDcharge}}</td>
+                    </tr>
+                    <tr>
+                        <th>Processing Charge</th>
+                        <td >{{processingcharge}}</td>
+                    </tr>
+                    <tr >
+                        <th >Total Charge</th>
+                        <td >{{total}}</td>
+                    </tr>
+                  
+                   
+                </table>
+                  
+            </div>
+            <div class="container text-center">
+                <button type="submit" (click)="proceed()" mat-raised-button color="primary">Proceed</button>
+                <button type="submit" [routerLink]="'/cprocessing'" class="clear"  mat-raised-button color="accent">Go Back</button>
+              </div>
+          </mat-card>
+          
+        </div>   
+        </div>
+    </div>
+</div>     

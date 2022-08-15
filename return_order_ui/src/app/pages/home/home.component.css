@@ -1,0 +1,24 @@
+.home img
+{
+    width:100%;
+    height:800px;
+    object-position: center;
+    object-fit: cover;
+
+
+}
+.homecontent{
+    position: absolute;
+    top:50%;
+    left: 10%;
+    margin-bottom: 30%;
+    
+}
+.homecontent h1{
+    color:aliceblue;
+    font-size:60px; 
+}
+.homecontent a{
+    color:aliceblue;
+    font-size:30px; 
+}

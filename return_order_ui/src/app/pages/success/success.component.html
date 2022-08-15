@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <mat-card>
+            <div class="container text-center">
+                <h2>Congratulations, your request is created successfully! </h2>
+                <img src="../../../assets/done1.png" width="450" height="450" alt="" >
+                <h2>Thankyou for using Return Order Portal</h2>
+            </div>
+            <div class="container text-center">
+                <button  [routerLink]="'/cprocessing'" mat-raised-button color="primary">Create another Request</button>
+                <button  [routerLink]="'/'" class="clear" onclick="out()"  mat-raised-button color="accent">Go to home</button>
+              </div>
