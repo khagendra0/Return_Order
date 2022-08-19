@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type:AWS::ECS::Service
     Properties:
-      TaskDefinition: "arn:aws:ecs:us-east-1:860061945305:task-definition/practice-aws:1"
+      TaskDefinition: ""arn:aws:ecs:us-east-1:860061945305:task-definition/khaggu-task:1""
         LoadBalancerInfo:
           ContainerName: "authentication"
           ContainerPort: "8200"
