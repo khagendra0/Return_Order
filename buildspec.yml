@@ -8,8 +8,8 @@ phases:
     - echo Logging in to Amazon ECR...
     - aws --version
     - (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 860061945305.dkr.ecr.us-east-1.amazonaws.com
-    - IMAGE_NAME=authentication git
-    - IMAGE_URI=860061945305.dkr.ecr.us-east-1.amazonaws.com/authentication:latest
+    - IMAGE_NAME=khaggu-repo
+    - IMAGE_URI=860061945305.dkr.ecr.us-east-1.amazonaws.com/khaggu-repo:latest
     - CONTAINER_NAME=practice-aws
   build:
     commands:
